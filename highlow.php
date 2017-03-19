@@ -16,8 +16,8 @@
 // }
 
 
-$rand = mt_rand ($min, $max );//insert random number funtion 
-fwrite(STDOUT, "guess a number between $min and $max");
+$rand = mt_rand (0, 100 );//insert random number funtion 
+// fwrite(STDOUT, "guess a number between $min and $max");
 
 $number = fgets(STDIN);
 do {
@@ -39,3 +39,5 @@ do {
 	}
 
 } while ($rand != fgets(STDIN));
+
+exit(0);
